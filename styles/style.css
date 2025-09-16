@@ -2,8 +2,7 @@ header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  height: 293px;
-  padding: 94px 50px;
+  padding: 91px 50px;
 }
 
 .header__menu {
@@ -11,7 +10,7 @@ header {
   font-weight: normal;
   font-display: swap;
   font-size: 18px;
-  line-height: 100%;
+  line-height: 130%;
 }
 
 .header__links-list {
@@ -29,9 +28,10 @@ header {
   text-decoration: none;
 }
 
+
 .header__logo {
   display: block;
-  width: 148px;
+  width: 146px;
 }
 
 .header_logo-image {
@@ -47,7 +47,8 @@ header {
   font-weight: normal;
   font-display: swap;
   font-size: 18px;
-  line-height: 24.3px;
+  line-height: 24.9px;
+  font-style: normal;
 }
 
 .header_address {
@@ -65,15 +66,15 @@ header {
 .cover {
   min-height: 757px;
   position: relative;
-  background-image: url(/images/cover.jpg);
+  background-image: url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -2;
+  z-index: 0;
 }
 
 .cover__title {
-  padding: 165px 50px 0px 50px;
+  padding: 155px 50px 0px 50px;
   text-transform: uppercase;
   font-family: Raleway, sans-serif;
   font-weight: bold;
@@ -85,17 +86,19 @@ header {
 
 .aligned-text {
   display: block;
-  margin: 7px 0;
+  margin: 13px 0;
 }
 
 .aligned-text_left {
   text-align: start;
-  letter-spacing: 0.35em;
+  letter-spacing: 0.3em;
 }
 
 .aligned-text_center {
   text-align: center;
   letter-spacing: 0.3em;
+  margin-left: 29px;
+  margin-top: 16px;
 }
 
 .aligned-text_right {
@@ -104,11 +107,12 @@ header {
 }
 
 .no-letter-spacing {
-  margin-right: -35px;
+  padding-top: 12px;
+  margin-right: -28px;
 }
 
 .cover__description {
-  padding: 118px 50px 50px 50px;
+  padding: 88px 50px 50px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -121,7 +125,7 @@ header {
   font-display: swap;
   font-size: 22px;
   line-height: 28px;
-  word-spacing: 20px;
+  word-spacing: 18px;
   text-transform: uppercase;
 }
 
@@ -136,11 +140,11 @@ header {
   font-display: swap;
   line-height: 100%;
   text-transform: uppercase;
-  border: 0.1px solid #ffffff;
+  border: 0.1px solid currentColor;
 }
 
 .lots {
-  margin: 180px 24px 120px 24px;
+  padding: 180px 24px 120px 24px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -169,16 +173,18 @@ header {
 
 .card-link {
   height: 100%;
+  text-decoration: none;
 }
 
 .card {
   height: 100%;
   position: relative;
-  z-index: -2;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 48px 40px;
+  
 }
 
 .card__title {
@@ -199,22 +205,21 @@ header {
   line-height: 120%;
 }
 
-.card_type_film {
-  background-image: url(/images/card-lot-01.jpg);
+.card_type {
   background-size: cover;
   background-position: center;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg)
 }
 
 .card_type_book {
-  background-image: url(/images/card-lot-02.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-  background-image: url(/images/card-lot-03.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(../images/card-lot-03.jpg);
 }
 
 .lots__look-more-link {
@@ -226,19 +231,19 @@ header {
 }
 
 .about {
-  margin: 0 24px 180px 24px;
-  min-height: 595px;
+  margin: 0 24px 185px 24px;
 }
 
 .about__column {
   display: grid;
   grid-template-columns: 334px auto;
+  gap: 25px
 }
 
 .about__logo {
   width: 240px;
   height: 240px;
-  margin-top: 35px;
+  margin-top: 33px;
   background-color: #000000;
   border-radius: 100%;
   display: flex;
@@ -258,7 +263,7 @@ header {
   font-weight: bold;
   font-size: 40px;
   line-height: 100%;
-  padding-top: 136px;
+  padding-top: 140px;
 }
 
 .about__text {
@@ -268,28 +273,28 @@ header {
   line-height: 24px;
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  gap: 24px;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  padding-top: 100px;
+  padding-top: 75px;
+  white-space: pre-line;
 }
 
 footer {
   padding: 0 50px 0 50px;
-  height: 180px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
 .footer__address {
   justify-self: start;
+  line-height: 23.5px;
 }
 
 .footer__menu {
   font-family: Raleway, sans-serif;
   font-weight: normal;
   font-size: 18px;
-  line-height: 100%;
+  line-height: 115%;
 }
 
 .footer__menu-list-item {
