@@ -2,7 +2,7 @@ header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 91px 50px;
+  padding: 88px 50px;
 }
 
 .header__menu {
@@ -10,7 +10,7 @@ header {
   font-weight: normal;
   font-display: swap;
   font-size: 18px;
-  line-height: 130%;
+  line-height: 120%;
 }
 
 .header__links-list {
